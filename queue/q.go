@@ -47,3 +47,10 @@ func (q *queue[V]) IsEmpty() bool {
 func (q *queue[V]) Size() int {
 	return q.size
 }
+
+func (q queue[V]) Front() (val V) {
+	if q.head != nil {
+		val = q.head.val
+	}
+	return
+}

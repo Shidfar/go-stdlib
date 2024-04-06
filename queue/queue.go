@@ -7,4 +7,5 @@ type Queue[V any] interface {
 	Pop() (val V)
 	IsEmpty() bool
 	Size() int
+	Front() (val V)
 }
