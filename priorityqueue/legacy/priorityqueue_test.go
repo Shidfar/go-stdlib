@@ -1,4 +1,4 @@
-package priorityqueue
+package legacy
 
 import (
 	"fmt"

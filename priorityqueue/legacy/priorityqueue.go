@@ -1,4 +1,4 @@
-package priorityqueue
+package legacy
 
 import (
 	"container/heap"
@@ -33,7 +33,7 @@ func (pq *PriorityQueue) Pop() interface{} {
 	return heap.Pop(&pq.q)
 }
 
-func (pq PriorityQueue) Len() int {
+func (pq *PriorityQueue) Len() int {
 	return pq.q.Len()
 }
 
